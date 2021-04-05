@@ -14,10 +14,8 @@ a {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center; /* <-- mémo: aligne verticalement les élements */
     margin: auto;
-    width: 100%;
     max-width: 1024px;
 }
 .logoHeader {
@@ -27,22 +25,20 @@ a {
 .navHeader {
     display: flex;
     margin-left: auto;
-}
-.navListHeader {
-    display: flex;
-    list-style-type: none;
+    order: 2;
     align-items: center;
-}
-.navItemHeader {
-    padding: 2rem;
 }
 .navLink {
     font-weight: 600;
     text-align: center;
     width: 100%;
+    padding: 2rem;
     transition-duration: 0.1s;
-    border-top: 4px transparent solid;
-    border-bottom: 4px transparent solid;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
+.navLink[data-active=true] {
+    color: #0065FC;
 }
 .navLink:hover {
     color: #0065FC;
@@ -51,8 +47,7 @@ a {
     display: flex;
     align-items: center;
     padding: 2rem;
-}
-.buttonRegisterHeader {
+    order: 3;
     color: #0065FC;
     font-weight: 800;
 }
