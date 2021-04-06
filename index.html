@@ -19,7 +19,7 @@
         </div>
         
         <nav class="navHeader">
-            <a class="navLink" href="#" data-active="true">Hébergements</a>
+            <a class="navLink" href="#" data-active="false">Hébergements</a>
             <a class="navLink" href="#" data-active="false">Activités</a>
         </nav>
         <div class="registerHeader">
@@ -33,44 +33,51 @@
         <!-- BEGIN SEARCH + FILTERS -->
 
         <section class="search">
-            <header class="searchHeader">
-                <h1 class="searchHeading">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="searchSubtitle">En plein centre ville ou en pleine nature</p>
+            <header class="header-search">
+                <h1 class="heading-search">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subtitle-search">En plein centre ville ou en pleine nature</p>
             </header>
             <form class="formSearch" action="#" method="post">
-                <span class="formSearchGps">
-                    <i class="fas fa-map-marker-alt fa-lg formSearchGpsIcon"></i>
+                <span class="formSearchLocation">
+                    <i class="fas fa-map-marker-alt fa-lg formSearchLocationIcon"></i>
                 </span>
-                <input class="formSearchInput" type="text" placerholder="Marseille, France">
-                <button>
-                    <span class="formSearchMagnifyingGlassText">Rechercher<span>
-                        <i class="formSearchMagnifyingGlassInputIcon fas fa-search fa-lg"></i>
+                <input class="form-search-input" type="text" placeholder="Marseille, France">
+                <button class="formSearchMagnifyingGlassInput">
+                    <span class="formSearchMagnifyingGlassText" >Rechercher</span>
+                    <i class="formSearchMagnifyingGlassInputIcon"></i>
                 </button>
             </form>
-            <div  class="searchFilters">
+            <div class="searchFilters">
                 <h3 class="searchFiltersTitle">Filtres</h3>
-                <div class="searchFiltersSelections">
-                    <div>
-                        <i class="fas fa-money-bill-wave fa-lg searchFiltersSelectionsIcon"></i>
-                        <span>Économique</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-child fa-lg searchFiltersSelectionsIcon"></i>
-                        <span>Familial</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-heart fa-lg fa-lg searchFiltersSelectionsIcon"></i>
-                        <span>Romantique</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-dog fa-lg searchFiltersSelectionsIcon"></i>
-                        <span>Animaux autorisés</span>
-                    </div>
+                <div class="searchFiltersSelection">
+                  <div class="searchFiltersSelectionWrapicon">
+                    <i class="fas fa-money-bill-wave fa-lg searchFiltersSelectionWrapiconIcon"></i>
+                  </div>
+                  <span class="searchFiltersSelectionTitle">Économique</span>
                 </div>
-            </div>
-            <div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+                <div class="searchFiltersSelection">
+                  <div class="searchFiltersSelectionWrapicon">
+                    <i class="fas fa-child fa-lg searchFiltersSelectionWrapiconIcon"></i>
+                  </div>
+                  <span class="searchFiltersSelectionTitle">Familial</span>
+                </div>
+                <div class="searchFiltersSelection">
+                  <div class="searchFiltersSelectionWrapicon">
+                    <i class="fas fa-heart fa-lg fa-lg searchFiltersSelectionWrapiconIcon"></i>
+                  </div>
+                  <span class="searchFiltersSelectionTitle">Romantique</span>
+                </div>
+                <div class="searchFiltersSelection">
+                  <div class="searchFiltersSelectionWrapicon">
+                    <i class="fas fa-dog fa-lg searchFiltersSelectionWrapiconIcon"></i>
+                  </div>
+                  <span class="searchFiltersSelectionTitle">Animaux autorisés</span>
+                </div>
+              </div>
+              <div class="searchResult">
+                <div class="searchResultWrapicon"><i class="fas fa-info fa-xs searchResultWrapiconIcon"></i></div>
+                <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+              </div>
         </section>
     </main>
 
