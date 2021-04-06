@@ -29,25 +29,43 @@
 
     <!-- BEGIN MAIN -->
 
-    <main>
+    <main class="main">
         <!-- BEGIN SEARCH + FILTERS -->
 
-        <section>
-            <header>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+        <section class="search">
+            <header class="searchHeader">
+                <h1 class="searchHeading">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="searchSubtitle">En plein centre ville ou en pleine nature</p>
             </header>
-            <form>
-                <input type="text" placerholder="Marseille, France">
-                <span>Rechercher</span>
+            <form class="formSearch" action="#" method="post">
+                <span class="formSearchGps">
+                    <i class="fas fa-map-marker-alt fa-lg formSearchGpsIcon"></i>
+                </span>
+                <input class="formSearchInput" type="text" placerholder="Marseille, France">
+                <button>
+                    <span class="formSearchMagnifyingGlassText">Rechercher<span>
+                        <i class="formSearchMagnifyingGlassInputIcon fas fa-search fa-lg"></i>
+                </button>
             </form>
-            <div>
-                <h3>Filtres</h3>
-                <div>
-                    <span>Économique</span>
-                    <span>Familial</span>
-                    <span>Romantique</span>
-                    <span>Animaux autorisés</span>
+            <div  class="searchFilters">
+                <h3 class="searchFiltersTitle">Filtres</h3>
+                <div class="searchFiltersSelections">
+                    <div>
+                        <i class="fas fa-money-bill-wave fa-lg searchFiltersSelectionsIcon"></i>
+                        <span>Économique</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-child fa-lg searchFiltersSelectionsIcon"></i>
+                        <span>Familial</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-heart fa-lg fa-lg searchFiltersSelectionsIcon"></i>
+                        <span>Romantique</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-dog fa-lg searchFiltersSelectionsIcon"></i>
+                        <span>Animaux autorisés</span>
+                    </div>
                 </div>
             </div>
             <div>

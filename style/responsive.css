@@ -17,10 +17,10 @@
       justify-content: center;
       }
     .navLink[data-active=true] {
-      border-top: 3px solid #0065FC;
+      border-top: 4px solid #0065FC;
     }
     .navLink:hover {
-      border-top: 3px solid #0065FC;
+      border-top: 4px solid #0065FC;
     }
   }
 
@@ -56,3 +56,5 @@
         border-bottom-color: #0065FC;
     }
 }
+
+  
