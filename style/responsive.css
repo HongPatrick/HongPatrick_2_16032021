@@ -124,4 +124,38 @@
       }
     }
 
+    /* BEGIN HOSTING & POPULAR */
+
+    @media screen and (min-width: 1024px) {
+      .hosting {
+        display: flex;
+        width: 100%;
+      }
+      .hostingMain {
+        display: flex;
+        flex-wrap: wrap;
+        width: 65%;
+      }
+      .mainCards {
+        background-color: white;
+        padding: 0.320rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 15px #0000002e;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 100%;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+      .mainCardsFigurePicture {
+        height: 4rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 12rem;
+        max-height: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+
   
