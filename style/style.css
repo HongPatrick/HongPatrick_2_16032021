@@ -16,7 +16,7 @@ a {
     display: flex;
     align-items: center; /* <-- mémo: aligne verticalement les élements */
     margin: auto;
-    max-width: 1024px;
+    max-width: 1440px;
 }
 .logoHeader {
     margin-left: 2rem;
@@ -55,7 +55,7 @@ a {
 /* BEGIN MAIN */
 
 .main {
-    max-width: 1024px;
+    max-width: 1440px;
     margin: auto;
     padding: 0 2.5rem;
     box-sizing: border-box;
@@ -201,28 +201,32 @@ a {
     display: flex;
     margin: auto;
     justify-content: center;
-    grid-template-columns: 6fr 3fr;
   }
   .hostingMain {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: auto;
-    
+    margin-left: auto;
+  }
+  .hostingMainHeader {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
   }
   .hostingMainTitle {
     font-weight: 800;
     margin: 0;
   }
   .mainCards {
-    background-color: white;
-    padding: 0.320rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 15px #0000002e;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    box-sizing: border-box;
-    height: 100%;
+  width: 30%;
+  width: calc(33.3% - 10px);
+  background: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 5px 20px 5px;
+  box-shadow: 0 5px 16px #0000002e;
+  transition-duration: 0.1s;
   }
   .mainCards:hover {
     transform: scale(1.08);
@@ -231,12 +235,7 @@ a {
   .mainCardsFigure {
     margin: 0;
   }
-  .mainCardsFigurePicture {
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 1rem 1rem 0 0;
-  }
+
   .mainCardsFigureCaptionTitle {
     margin: 0.25rem 0.75rem 0 0.75rem;
     font-weight: 800;
@@ -258,4 +257,10 @@ a {
   }
   .hostingMainViewmore {
     font-weight: 800;
+  }
+
+  .hostingPopular {
+    width: 25%;
+    display: flex;
+  }
   

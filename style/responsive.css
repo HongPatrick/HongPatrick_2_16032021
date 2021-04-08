@@ -2,7 +2,7 @@
 
 /* BEGIN HEADER */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     .header {
       margin: auto;
       flex-wrap: wrap;
@@ -126,7 +126,7 @@
 
     /* BEGIN HOSTING & POPULAR */
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
       .hosting {
         display: flex;
         width: 100%;
@@ -134,28 +134,36 @@
       .hostingMain {
         display: flex;
         flex-wrap: wrap;
-        width: 65%;
+        width: 70%;
+        height: 620px;
+        margin-right: 2rem; 
+      }
+      .containerMain {
+        display: flex;
+        flex-wrap: wrap;
       }
       .mainCards {
-        background-color: white;
-        padding: 0.320rem;
-        border-radius: 1.25rem;
-        box-shadow: 0 0 15px #0000002e;
-        transition-duration: 0.1s;
-        cursor: pointer;
+        width: 30%;
+        width: calc(33.3% - 13px);
+        background: white;
+        border-radius: 20px;
+        padding: 5px;
         box-sizing: border-box;
-        height: 100%;
-        margin-right: 1rem;
-        margin-top: 1rem;
+        margin: 0.5rem;
+        margin-left: 0;
+        box-shadow: 0 5px 16px #0000002e;
       }
       .mainCardsFigurePicture {
-        height: 4rem;
+        height: 7rem;
         object-fit: cover;
         max-width: 100%;
-        width: 12rem;
+        width: 100%;
         max-height: 100%;
         border-radius: 1rem 1rem 0 0;
       }
+      .mainCardsFigure {
+        margin: 0;
     }
+
 
   
