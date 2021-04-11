@@ -191,7 +191,7 @@ a {
           }
 
   /* BEGIN HOSTING */
-  .hostingWrapper, .hostingPopular, .hostingMain {
+  .hostingWrapper, .hostingSecondly, .hostingMain {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     padding: 2rem;
@@ -199,27 +199,24 @@ a {
   
   .hosting {
     display: flex;
-    margin: auto;
-    justify-content: center;
+    justify-content: space-between;
   }
   .hostingMain {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: auto;
   }
   .hostingMainHeader {
     display: flex;
     align-items: center;
-    margin-left: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
   .hostingMainTitle {
     font-weight: 800;
     margin: 0;
   }
   .mainCards {
-  width: 30%;
-  width: calc(33.3% - 10px);
   background: white;
   border-radius: 20px;
   padding: 5px;
@@ -256,11 +253,23 @@ a {
     color: #d9d9d9;
   }
   .hostingMainViewmore {
+    margin-left: 1rem;
     font-weight: 800;
   }
+  
+  /* BEGIN HOSTING POPULAR */
 
-  .hostingPopular {
-    width: 25%;
+  .hostingSecondly {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
+  .hostingSecondlyTitle {
+    font-weight: 800;
+    margin: 0;  
+  }
+  
+
+
+
   
