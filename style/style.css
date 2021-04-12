@@ -198,19 +198,17 @@ a {
   }
   
   .hosting {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
   }
   .hostingMain {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
   .hostingMainHeader {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    grid-column: 1/-1;
   }
   .hostingMainTitle {
     font-weight: 800;
@@ -223,16 +221,23 @@ a {
   box-sizing: border-box;
   margin: 0 5px 20px 5px;
   box-shadow: 0 5px 16px #0000002e;
-  transition-duration: 0.1s;
+  transition-duration: all 200ms ease-in-out;
   }
   .mainCards:hover {
-    transform: scale(1.08);
+    transform: translateY(-1rem);
     border-radius: 1.50rem;
   }
   .mainCardsFigure {
     margin: 0;
   }
-
+  .mainCardsFigurePicture {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
   .mainCardsFigureCaptionTitle {
     margin: 0.25rem 0.75rem 0 0.75rem;
     font-weight: 800;
@@ -253,21 +258,55 @@ a {
     color: #d9d9d9;
   }
   .hostingMainViewmore {
-    margin-left: 1rem;
     font-weight: 800;
   }
   
   /* BEGIN HOSTING POPULAR */
 
   .hostingSecondly {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
   }
   .hostingSecondlyTitle {
     font-weight: 800;
-    margin: 0;  
+    margin: 0; 
+    display: flex;
+    justify-content: space-between;
   }
+  .hostingSecondlyWrapcontent {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+  }
+  .hostingSecondlyWrapcontentWrapimg {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+  .hostingSecondlyWrapcontentWrapimgImg {
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hostingSecondlyWrapcontentContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .hostingSecondlyWrapcontentContentWhitespace {
+    flex: 1;
+  }
+  .hostingPopularhostingMainCard {
+    height: 8.75rem;
+  }
+
+
   
 
 
