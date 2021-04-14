@@ -348,7 +348,7 @@ height: 8.75rem;
   background-color: #F2F2F2;
   width: 100%;
 }
-.footerColumnwrapper {
+.footerContainer {
   display: flex;
   max-width: 100%;
   width: 1440px;
@@ -356,15 +356,15 @@ height: 8.75rem;
   padding: 0 2rem;
   box-sizing: border-box;
 }
-.footerColumnwrapperColumn {
+.footerwrapColumn {
   width: 30%;
   padding: 2rem 2rem;
 }
-.footerColumnwrapperColumnLink {
+.footerColumnLink {
   display: block;
   margin: 1rem 0;
 }
-.footerColumnwrapperColumnLink:hover {
+.footerColumnLink:hover {
   text-decoration: underline;
 }
   
