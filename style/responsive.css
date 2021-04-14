@@ -7,10 +7,10 @@
     flex-wrap: wrap;
     justify-content: center;
     }
-  .header-link[data-active=true] {
+  .headerNavBarLink[data-active=true] {
     border-top: 4px solid #0065FC;
   }
-  .header-link:hover {
+  .headerNavBarLink:hover {
     border-top: 4px solid #0065FC;
   }
 }
@@ -21,28 +21,28 @@
       flex-wrap: wrap;
       justify-content: flex-start;
     }
-    .header-logo {
+    .headerLogo {
       order: 0;
       display: flex;
       margin-left: 1rem;
     }
-      .header-register { 
+      .headerRegister { 
         order: 1;
         margin-left: auto;
     }
-      .header-nav {
+      .headerNavBar {
         flex: 1;
         order: 3;
     }
-    .header-link {
+    .headerNavBarLink {
         border-top: none;
         border-bottom: 4px solid #F2F2F2;
         width: 50%;
     }
-      .header-link[data-active=true] {
+      .headerNavBarLink[data-active=true] {
         border-bottom-color: #0065FC;
       }
-      .header-link:hover {
+      .headerNavBarLink:hover {
         border-bottom-color: #0065FC;
     }
 }
@@ -64,52 +64,52 @@
     margin-left: 1.7rem;
     padding-top: 1rem;
   }
-  .header-search {
+  .headerSearch {
     padding-left: 1.7rem;
     padding-right: 1.7rem;
   }
-  .subtitle-search {
+  .subtitleSearch {
     padding-top: 0.5rem;
   }
   .searchResult {
     margin:0;
     padding: 1rem;
   }
-  .form-search-input {
+  .formSearchInput {
     flex: 0.2rem;
     padding: 1.1rem;
     width: 8rem;
   }
-  .formSearchLocation{
+  .formSearchGps{
     border-radius: 1.1rem 0 0 1.1rem;
   }
-  .formSearchMagnifyingGlassText {
+  .formSearchBtnText {
     display: none;
   }
-  .formSearchMagnifyingGlassInputIcon {
+  .btnIcon {
     display: block;
   }
-  .formSearchMagnifyingGlassInput {
+  .formSearchBtnInput {
     border-radius: 1rem;
     padding: 0 1.3rem;
   }
-  .searchFilters {
+  .filters {
     margin-left: 1.5rem;
   }
 }
 @media screen and (max-width: 650px) {
-  .searchFiltersTitle {
+  .filtersTitle {
     width: 100%;
   }
-  .searchFiltersFilter {
+  .filtersSelection {
     margin-right: 1rem;
   }
 }
 @media screen and (min-width: 601px) {
-  .formSearchMagnifyingGlassText {
+  .formSearchBtnText {
     display: block;
   }
-  .formSearchMagnifyingGlassInputIcon {
+  .btnIcon {
     display: none !important;
   }
 }

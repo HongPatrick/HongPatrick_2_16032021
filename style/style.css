@@ -17,17 +17,17 @@ a {
   max-width: 1440px;
   margin: auto;
 }
-.header-logo {
+.headerLogo {
   margin-left: 2rem;
   height: 2.5rem;
 }
-.header-nav {
+.headerNavBar {
   margin-left: auto;
   order: 2;
   display: flex;
   align-items: center;
 }
-.header-link {
+.headerNavBarLink {
   font-weight: 600;
   text-align: center;
   padding: 2rem;
@@ -36,13 +36,13 @@ a {
   border-top: 4px transparent solid;
   border-bottom: 4px transparent solid;
 }
-.header-link[data-active=true] {
+.headerNavBarLink[data-active=true] {
   color: #0065FC;
 }
-.header-link:hover {
+.headerNavBarLink:hover {
   color: #0065FC;
 }
-.header-register {
+.headerRegister {
   display: flex;
   align-items: center;
   order: 3;
@@ -61,11 +61,11 @@ a {
 }
 
   /* BEGIN SEARCH*/
-.heading-search {
+.headingSearch {
   margin-bottom: 0.5rem;
   font-weight: 800;   
 }
-.subtitle-search {
+.subtitleSearch {
   margin-top: 0;
   font-weight: 600;
 
@@ -75,17 +75,17 @@ a {
   max-width: 100%;
   overflow: auto;
 }
-.formSearchLocation {
+.formSearchGps {
   background-color: #F2F2F2;
   padding: 1.1rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
 }
-.formSearchLocationIcon {
+.gpsIcon {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
-.form-search-input {
+.formSearchInput {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
@@ -97,14 +97,14 @@ a {
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
 }
-.form-search-input::placeholder {
+.formSearchInput::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 1.1rem;
   font-weight: 800;
   color: black;
 }
 
-.formSearchMagnifyingGlassInput {
+.formSearchBtnInput {
   background-color: #0065FC;
   color: white;
   font-weight: bold;
@@ -115,18 +115,18 @@ a {
   font-size: 1rem;
   cursor: pointer;
 }
-.searchFilters {
+.filters {
   display: flex;
   margin-top: 2rem;
   flex-wrap: wrap;
 }
-.searchFiltersTitle {
+.filtersTitle {
   margin: 0 2rem 1rem 0;
   display: flex;
   align-items: center;
   font-weight: 800;
 }
-.searchFiltersFilter {
+.filtersSelection {
   display: flex;
   align-items: center;
   margin-right: 2rem;
@@ -137,14 +137,14 @@ a {
   transition-duration: 0.1s;
   font-weight: 800;
 }
-.searchFiltersFilter:last-child {
+.filtersSelection:last-child {
   margin-right: 0;
 }
-.searchFiltersFilter:hover {
+.filtersSelection:hover {
   background-color: #f3f8ff;
   transform: scale(1.15);
 }
-.searchFiltersFilterWrapicon {
+.selectionWrapIcon {
   background-color: #DEEBFF;
   border-radius: 100%;
   height: 3rem;
@@ -156,10 +156,10 @@ a {
   justify-content: center;
   margin: -2px;
 }
-.searchFiltersFilterWrapiconIcon {
+.selectionIcon {
   color: #0065FC;
 }
-.searchFiltersFilterTitle {
+.selectionTitle {
   margin: 0 1rem;
 }
 .searchResult {
@@ -168,7 +168,7 @@ a {
   margin: 1rem 0 2rem 0;
   font-weight: 600;
 }
-.searchResultWrapicon {
+.resultWrapicon {
   height: 1.5rem;
   width: 1.5rem;
   min-height: 1.5rem;
@@ -180,7 +180,7 @@ a {
   justify-content: center;
   margin-right: 1rem;
 }
-.searchResultWrapiconIcon {
+.resultIcon {
   color: #0065FC;
 }
 .searchResultText {
@@ -213,7 +213,7 @@ grid-column: 1/-1;
 font-weight: 800;
 margin: 0;
 }
-.hostingMainCard {
+.frameMain {
 background-color: white;
 padding: 0.320rem;
 border-radius: 1.25rem;
@@ -223,14 +223,14 @@ cursor: pointer;
 box-sizing: border-box;
 height: 100%;
 }
-.hostingMainCard:hover {
+.frameMain:hover {
 transform: scale(1.08);
 border-radius: 1.50rem;
 }
-.hostingMainCardFigure {
+.frameFigure {
 margin: 0;
 }
-.hostingMainCardFigureImg {
+.framePicture {
 height: 7rem;
 object-fit: cover;
 max-width: 100%;
@@ -238,26 +238,26 @@ width: 100%;
 max-height: 100%;
 border-radius: 1rem 1rem 0 0;
 }
-.hostingMainCardFigureCaptionTitle {
+.frameCaptionTitle {
 margin: 0.25rem 0.75rem 0 0.75rem;
 font-weight: 800;
 }
-.hostingMainCardFigureCaptionTitle {
+.frameCaptionTitle {
   font-weight: 800;  
 }
-.hostingMainCardDesc {
+.frameDescription {
 margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-.hostingMainCardDescPrice {
+.framePrice {
 font-weight: bold;
 }
-.hostingMainCardGrade {
+.frameLevel {
 margin: 0 0.75rem 0.25rem 0.75rem;
 }
-.hostingMainCardGradeIcon[data-active=true] {
+.levelIcon[data-active=true] {
 color: #0065FC;
 }
-.hostingMainCardGradeIcon[data-active=false] {
+.levelIcon[data-active=false] {
 color: #d9d9d9;
 }
 .hostingMainViewmore {
