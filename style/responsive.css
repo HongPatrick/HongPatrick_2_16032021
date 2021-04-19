@@ -35,7 +35,9 @@
         order: 3;
     }
     .headerNavBarLink {
-        border-top: none;
+        border-top: 0.5rem;
+        padding: 1rem;
+        padding-top: 0.3rem;
         border-bottom: 4px solid #F2F2F2;
         width: 50%;
     }
@@ -235,6 +237,7 @@
   .activity {
     margin: 0;
     margin-top: 2rem;
+    margin-bottom: 2.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
